@@ -15,6 +15,14 @@
 </head>
 
 <body>
+    <div class="inscricao">
+        <div class="textoIns">
+        <span class="convite">Inscreva-se e receba nossas novidades!</span>
+        <input class="email" type="email" placeholder="Digite seu e-mail" required>
+        <p class="incorreto">Email inválido!</p>
+        <button class="part" onclick="participar()">Inscrever-se!</button>
+        </div>
+    </div>
     <img class='logo' src="img/logo.png" alt="Logo Starbucks">
     <div class="conteudo">
         <div class="texto">
@@ -34,7 +42,10 @@
         <img class="botao-menu" src="img/thumb3.png" alt="" onclick="trocarImagem('img/img3.png' , '#ff0481')">
     </div>
     <div class="circulo"></div>
-    <script src="script.js"></script>
-</body>
+    <div id="notificacao" class="notificacao">
+    Inscrição realizada com sucesso!
+</div>
 
+</body>
+<script src="script.js"></script>
 </html>

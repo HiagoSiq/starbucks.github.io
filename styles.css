@@ -65,7 +65,7 @@ p {
     font-size: 100%;
 }
 
-button {
+.botao {
     background-color: #017143;
     color: #fff;
     border-radius: 30px;
@@ -76,7 +76,7 @@ button {
     transition: 250ms;
 }
 
-button:hover {
+.botao:hover {
     background-color: #005733;
     animation: tremer 0.13s 3;
 }
@@ -151,4 +151,91 @@ button:hover {
     clip-path: circle(40% at 100%);
     z-index: -1;
     transition: 1s;
+}
+
+.inscricao {
+    display: none;
+    position: fixed;
+    background-color: aqua;
+    height: 60%;
+    width: 50%;
+    top: 8%;
+    left: 22%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    background-image: url(img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.textoIns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    gap: 20px;
+}
+
+.email {
+    margin-top: 10%;
+    width: 70%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #017143;
+    font-size: 100%;
+}
+
+.part {
+    background-color: #017143;
+    color: #a0fa7d;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    margin-top: 1%;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.convite {
+    color: rgb(54, 248, 5);
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.inscricao.ativo {
+    display: flex;
+}
+
+.incorreto {
+    color: rgb(202, 0, 0);
+    background-color: #000000;
+    font-size: 90%;
+    display: none;
+    font-weight: bold;
+    word-wrap: none;
+}
+
+.incorreto.ativo {
+    display: block;
+}
+
+.notificacao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2e7d32;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.notificacao.ativa {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }
